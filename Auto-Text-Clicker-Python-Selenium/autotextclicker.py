@@ -4,26 +4,26 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.keys import Keys
 
-# Web driver'ı başlat
+# Start the web driver
 driver = webdriver.Chrome()
 
-# Sayfayı yükle
+# Load the page
 driver.get("https://www.google.com/")
 
-# Arama kutusunu bul
+# Find the search box
 search_box = driver.find_element(By.NAME, "q")
 
-# Arama kutusuna yazı gönder
+# Send text to the search box
 search_box.send_keys("Python programming")
 search_box.send_keys(Keys.RETURN)
 
-# Arama sonuçları sayfasının yüklenmesini bekle
+# Wait for the search results page to load
 wait = WebDriverWait(driver, 10)
 wait.until(EC.presence_of_element_located((By.ID, "search")))
 
-# İlk sonuca tıkla
+# Click on the first result
 first_result = driver.find_element(By.CSS_SELECTOR, "div.g a")
 first_result.click()
 
-# Web sürücüsünü kapat
+# Close the web driver
 driver.quit()
