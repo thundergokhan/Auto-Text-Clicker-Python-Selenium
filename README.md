@@ -1,31 +1,27 @@
-# Auto Text Clicker with Python Selenium
-This is a simple Python script that uses Selenium to automate text entry and clicking operations on a website.
+# Auto Text Clicker with Python and Selenium
 
-Prerequisites
-To use this script, you need to have Python and Selenium installed on your machine.
+This is a simple Python script that uses the Selenium library to open a Google search page, click on the "I'm Feeling Lucky" button, and then click on the first search result. The script can be easily modified to perform similar actions on any website.
 
-You can install Python from the official website: https://www.python.org/downloads/
+## Installation
 
-You can install Selenium using pip:
+1. Clone the repository:
 
-<code> pip install selenium </code> 
+<code> git clone https://github.com/thundergokhan/Auto-Text-Clicker-Python-Selenium.git</code>
 
-You also need to download and install the ChromeDriver executable for your system. You can download the latest version of ChromeDriver from the following link: https://sites.google.com/a/chromium.org/chromedriver/downloads
+2. Install the required libraries:
 
-Usage
-Clone or download the repository to your local machine.
-Open the ototextclicker.py file in a text editor.
-Modify the script according to your needs. You can change the website URL, element locators, text to enter, etc.
-Save the changes and run the script using the following command:
+<code> pip install selenium </code>
 
-<code> python ototextclicker.py </code> 
+3. Download and install the Chrome WebDriver from [here](https://chromedriver.chromium.org/downloads), and make sure that the path to the `chromedriver` executable is added to your system's `PATH` environment variable.
 
-The script will open a Chrome browser window and perform the text entry and clicking operations on the specified website.
+## Usage
 
-Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+To run the script, simply navigate to the repository folder in your terminal and run:
 
-Please make sure to update tests as appropriate.
+<code> python autotextclicker.py</code>
 
-License
-This project is licensed under the MIT License - see the LICENSE.md file for details.
+The script will open a new Chrome window and perform the actions described above.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
